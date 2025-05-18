@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Posezení u táboráku</title>
+<style>
+  body { font-family: sans-serif; background: #fffaf0; color: #333; max-width: 600px; margin: 2rem auto; padding: 1rem; }
+  h1 { color: #d2691e; }
+  a.button { display: inline-block; margin: 10px 0; padding: 10px 15px; background: #d2691e; color: white; text-decoration: none; border-radius: 4px; }
+  form { margin-top: 20px; }
+  label { display: block; margin-top: 1rem; }
+  input, button { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<h1>Posezení u táboráku</h1>
+<p><strong>Kdy:</strong> 21. června 2025 od 15:00</p>
+<p><strong>Kde:</strong> Chata za Hájkem, Pikarec</p>
+<p><strong>Kapacita:</strong> 150 osob</p>
+
+<h2>Rezervace místa</h2>
+<form name="reservation" method="POST" data-netlify="true">
+  <label>Jméno:
+    <input type="text" name="name" required />
+  </label>
+  <label>E-mail:
+    <input type="email" name="email" required />
+  </label>
+  <label>Počet osob:
+    <input type="number" name="guests" min="1" max="10" required />
+  </label>
+  <button type="submit">Rezervovat místo</button>
+</form>
+
+<h2>Kontakt</h2>
+<p><a class="button" href="mailto:chatapodhajkem@email.cz">📧 Napiš e-mail</a></p>
+<p><a class="button" href="https://wa.me/420123456789?text=Dobrý%20den,%20rád(a)%20bych%20se%20přihlásil(a)%20na%20akci%20Posezení%20u%20táboráku">📱 WhatsApp</a></p>
+</body>
+</html>
